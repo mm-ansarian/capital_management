@@ -2,7 +2,7 @@
 calling the database.
 """
 
-
+# TODO: Fix the problem related to importing the mysql.connector module in .exe files.
 import mysql.connector as db_module
 import ctypes
 

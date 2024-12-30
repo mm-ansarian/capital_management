@@ -5,19 +5,46 @@ So I started and when I finished programming, I felt that I can learn a lot of t
 
 ## Introduction
 In this PC app called "Capital Management", you can register your financial transactions and see some details about your capital. 
-This program contains a GUI (Graphical User Interface) designs with Qt5, a database that is mysql and some source codes written with python.
+This program contains a GUI(Graphical User Interface) designs with Qt5, a database that is mysql and some source codes written with python.
 
 ## How to run
-To easy run (for the users or someone who wants to test the app), I am trying to put a .exe file in the project's folder, but it seems that there is a problem related to database module; so there is no .exe file yet.
-If you want to develop it or see its source codes(or the only way to run this program till now 😐), you can run the "app.py" with your favorite IDE or a command prompt.
-Just make sure that the host, username and the password of the mysql database(that is specified in "options.py", in "Options" class) of the code is synced with your own database.
+#### Easy run
+To run the program easily(for the users or someone who wants to test the app), I put a .exe file in the project's folder, but it seems that there is a problem related to database module; so the .exe file doesn't work yet and you can't open the app with the .exe file(An error happen when opening the .exe file).
+
+#### For developers
+If you want to develop it or see its source codes(or the only way to run this program till now 😐), follow the steps below:
+
+1. Install `python3` and `mysql` on your system.
+2. Clone the project repository:
+```bash
+git clone https://github.com/mm-ansarian/Capital_Management.git
+``` 
+or 
+```bash
+git clone git@github.com:mm-ansarian/Capital_Management.git
+```
+3. Open the project folder.
+4. Install the required Python packages(`PyQt5` and `mysql-connector-python`). You can do this by using the `requirements.txt`:
+```bash
+pip install -r requirements.txt
+```
+5. Configure the database connection:
+- Open `options.py`.
+- Update the host, username, and password variables with your own database credentials (lines 18 to 21).
+
+6. Set up the MySQL database:
+- Create a new database in MySQL.
+- Import the database schema if provided.
+7. Run `app.py`
 
 ## Used tools
 - **Programming language**: Python
+    - PyQt5
+    - mysql-connector-python
 - **Database**: MySQL
-- **GUI**: Qt5
+- **GUI**: Qt
 
 ## TODO
-- [ ] Solve the problem of database module.
-- [ ] Create a .exe file for the program. 
+- [ ] Fix the problem of database module.
 - [ ] Sync the database with all the different situations.
+- [ ] Add dark mode to the program.
