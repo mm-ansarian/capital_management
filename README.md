@@ -39,8 +39,6 @@ pip install -r requirements.txt
 
 ## Used tools
 - **Programming language**: Python
-    - PyQt5
-    - mysql-connector-python
 - **Database**: MySQL
 - **GUI**: Qt
 
