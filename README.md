@@ -43,6 +43,6 @@ pip install -r requirements.txt
 - **GUI**: Qt
 
 ## TODO
-- [ ] Fix the problem of database module.
-- [ ] Sync the database with all the different situations.
+- [ ] Change the database frome MySQL to SQLite3.
+- [ ] Add an organised layout to the GUI.
 - [ ] Add dark mode to the program.
